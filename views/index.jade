@@ -1,0 +1,26 @@
+extends layout
+block header
+  a(href='/')
+    img(src='images/Logo.svg')
+    
+block titles
+  h1= title
+  p Welcome to #{title}
+  
+block paragraph
+  .tim
+    p 
+      | Vivamus hendrerit arcu sed erat molestie
+      | vehicula. Sed auctor neque eu tellus
+      | rhoncus ut eleifend nibh porttitor. Ut in.
+  .class2
+    p
+      | Donec congue lacinia dui, a porttitor
+      | lectus condimentum laoreet. Nunc eu
+      | ullamcorper orci. Quisque eget odio ac
+      | lectus vestibulum faucibus eget in metus.
+      | In pellentesque faucibus vestibulum. Nulla
+      | at nulla justo, eget luctus tortor.
+
+block footer
+    h2= "Created with care by Tim Pender"
