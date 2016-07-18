@@ -6,9 +6,9 @@ block header
     nav
       ul
         li
-          a(href='#') Home
+          a(href='/') Home
         li
-          a(href='#') About
+          a(href='/about') About
         li
           a(href='#') Portfolio
         li
@@ -17,15 +17,13 @@ block header
           a(href='#') Contact
 block titles
   h1= title
-  p Welcome to #{title}
-block nav
 block paragraph
-  .tim
+  .subtitle
     p 
       | Vivamus hendrerit arcu sed erat molestie
       | vehicula. Sed auctor neque eu tellus
       | rhoncus ut eleifend nibh porttitor. Ut in.
-  .class2
+  .bodytext
     p
       | Donec congue lacinia dui, a porttitor
       | lectus condimentum laoreet. Nunc eu
@@ -35,4 +33,5 @@ block paragraph
       | at nulla justo, eget luctus tortor.
 
 block footer
+  footer
     h2= "Created with care by Tim Pender"

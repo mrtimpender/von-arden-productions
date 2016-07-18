@@ -10,8 +10,10 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color:white;
+  height:100vh;
 }
 
+/* NAVIGATION */
 nav {
   display: inline;
   float: right;
@@ -36,14 +38,24 @@ nav ul li a:hover {
   color: #008EB9;
 }
 
+/* FOOTER */
+footer{
+  margin:0;
+  padding:0;
+  bottom: 0;
+}
+footer h2{
+  display: inline;
+}
 
-
-
-
-.tim {
+.subtitle {
   color: lightgreen;
 }
 
-.class2 {
-  color: lightblue;
+.bodytext {
+  color: #008EB9;
+}
+
+.profilepic img{
+  width:50vw;
 }
