@@ -7,9 +7,10 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script(type='text/javascript', src='/javascripts/javascript.js')
   body
-    block header
-    include ../public/includes/header
-    block titles
-    block paragraph
-    block footer
-    include ../public/includes/footer
+    #container  
+      block header
+      include ../public/includes/header
+      block titles
+      block content
+      block footer
+      include ../public/includes/footer
