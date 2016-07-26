@@ -1,20 +1,5 @@
 extends layout
-block header
-  header
-    a(href='/')
-      img(src='images/Logo.svg')
-    nav
-      ul
-        li
-          a(href='/') Home
-        li
-          a(href='/about') About
-        li
-          a(href='/portfolio') Portfolio
-        li
-          a(href='/services') Services
-        li
-          a(href='/contact') Contact
+
 block titles
   h1= title
 block paragraph
@@ -31,7 +16,4 @@ block paragraph
       | lectus vestibulum faucibus eget in metus.
       | In pellentesque faucibus vestibulum. Nulla
       | at nulla justo, eget luctus tortor.
-
 block footer
-  footer
-    h2= "Created with care by Tim Pender"
