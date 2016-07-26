@@ -13,20 +13,27 @@ body {
   height:100vh;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
 /* NAVIGATION */
 nav {
-  display: inline;
+  display: inline-block;
   float: right;
   margin-top: 3%;
 }
 nav ul, ul li {
   list-style: none;
   color: white;
-  display: inline;
+
 }
 
 nav ul li{
-  padding-right: 3%;
+  padding-right: 10vw;
+  display: inline;
 }
 
 nav ul li a {

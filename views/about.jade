@@ -1,0 +1,35 @@
+extends layout
+block header
+  header
+    a(href='/')
+      img(src='images/Logo.svg')
+    nav
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/portfolio') Portfolio
+        li
+          a(href='/services') Services
+        li
+          a(href='/contact') Contact
+block titles
+  h1= title
+block paragraph
+  .subtitle
+    h2 Eric Von Holtscneider
+  .profilepic
+    img(src='images/profile.jpg')
+  .bodytext
+    p
+      | VonArdenProductions is a video and photography company primarily serving the Maryland, Virginia, Washington DC, West Virginia, Delaware, and Pennsylvania region. Though available for hire nationally and worldwide. We strive to give you a unique product, which will be carefully crafted to meet your needs. 
+    p
+      | We have an eclectic array of video and photography services. On the video side of the house we specialize in weddings, mitzvahs, events, virtual tours, corporate, interviews, testimonials, and aerial footage. While our photography staff focuses primarily on real estate, portrait, and product photography. 
+    p  
+      | VonArdenProductions is dedicated to providing each client with a high quality product, that will meet your expectations.
+
+block footer
+  footer
+    h2= "Created with care by Tim Pender"
