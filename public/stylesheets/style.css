@@ -239,6 +239,10 @@ body {
   margin-left: 5vw;
 }
 
+.subtitle {
+  color: lightgreen;
+}
+
 /* HEADER */
 header {
   margin: 0;
@@ -288,11 +292,7 @@ nav ul li a:hover {
 	color: #008EB9;
 }
 
-
-.subtitle {
-  color: lightgreen;
-}
-
+/* ABOUT PAGE */
 .about-body-text {
   float: right;
   display: inline-block;
@@ -305,11 +305,16 @@ nav ul li a:hover {
   font-size: 1.2em;
 }
 
-
 .about-pic {
   display: inline-block;
 }
 
 .about-pic img {
   width: 40vw;
+}
+
+/* CONTACT PAGE */
+.contact-map {
+  display: inline-block;
+	float: right;
 }

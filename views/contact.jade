@@ -2,8 +2,31 @@ extends layout
 block titles
   h1= title
 block content
-  
   .contact-map
     iframe(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
-  
+  form(name='contact', method='post')
+    label(for='first-name')
+      div.input
+        input(type='text', name='first-name', placeholder='First Name')
+    label(for='last-name')
+      div.input
+        input(type='text', name='first-name', placeholder='Last Name')
+    label(for='phone')
+      div.input
+        input(type='text', name='phone', placeholder='Last Name')
+    label(for='event-date')
+      div.input
+        input(type='text', name='event-date', placeholder='Event Date')
+    label(for='event-location')
+      div.input
+        input(type='text', name='event-location', placeholder='Event Location')
+    label(for='find-out')
+      div.input
+        input(type='text', name='event-location', placeholder='How did you find out about us?')
+    label(for='event-details')
+      | Send us a message
+      div.input.event-details
+        textarea(type='text-box', name='event-details', cols'40', rows='6', placeholder='Additional details. Questions? Comments? Anything we should know?')
+    div.actions
+          input(type="submit", value="Submit")
 block footer
