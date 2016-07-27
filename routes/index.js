@@ -13,15 +13,15 @@ router.get('/about', function(req, res, next) {
 
 /* Contact GET */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', {title: 'CONTACT'});
+  res.render('contact', {title: 'Contact'});
 })
 /* Portfolio GET */
 router.get('/portfolio', function(req, res, next) {
-  res.render('portfolio', {title: 'PORTFOLIO'});
+  res.render('portfolio', {title: 'Portfolio'});
 });
 /* SERVICES GET */
 router.get('/services', function(req, res, next) {
-    res.render('services', {title: 'SERVICES'});
+    res.render('services', {title: 'Services'});
   });
 
 module.exports = router;

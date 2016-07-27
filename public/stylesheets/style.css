@@ -15,7 +15,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
 nav,
@@ -229,13 +228,13 @@ html {
 }
 
 body {
-  padding-top: 25px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color:white;
   height:100vh;
 }
 
 #container {
+  margin-top: 25px;
   width: 90vw;
   margin-left: 5vw;
 }
@@ -245,6 +244,7 @@ header {
   margin: 0;
   padding: 0;
   right: 0;
+  display: inline-block;
 }
 
 /* FOOTER */
@@ -282,6 +282,10 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #008EB9;
+}
+
+.active-link {
+	color: #008EB9;
 }
 
 
