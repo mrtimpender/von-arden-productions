@@ -14,12 +14,12 @@
         <g id="Logo" transform="translate(5.000000, -3.000000)">
             <g>
                 <text id="Logo-Header" font-family="Raleway-Black, Raleway" font-size="48" font-weight="700" line-spacing="42" letter-spacing="0.305454522" fill="#FFFFFF">
-                    <tspan x="21" y="45">VON</tspan>
-                    <tspan x="21" y="87">ARDEN</tspan>
+                    <tspan x="21" y="40">VON</tspan>
+                    <tspan x="21" y="83">ARDEN</tspan>
                 </text>
                 <g id="Diamond">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                    <use stroke="#03A0C4" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+                    <use stroke="#26c6da" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
                 </g>
             </g>
         </g>

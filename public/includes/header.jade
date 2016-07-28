@@ -1,15 +1,14 @@
 header
-  a(href='/')
-    img(src='images/Logo.svg')
   nav
-    ul
-      li
-        a.nav-link(href='/') Home
-      li
-        a.nav-link(href='/about') About
-      li
-        a.nav-link(href='/portfolio') Portfolio
-      li
-        a.nav-link(href='/services') Services
-      li
-        a.nav-link(href='/contact') Contact
+    .nav-wrapper
+      a(href='/')
+        img.logo(src='images/Logo.svg')
+      ul#nav-mobile.right.hide-on-sm-and-down
+        li
+          a.nav-link(href='/about') About
+        li
+          a.nav-link(href='/portfolio') Portfolio
+        li
+          a.nav-link(href='/services') Services
+        li
+          a.nav-link(href='/contact') Contact
