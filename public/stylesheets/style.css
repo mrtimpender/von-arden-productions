@@ -70,7 +70,8 @@ footer h2{
 }
 
 /* CONTACT PAGE */
-.contact-map {
+.map {
   display: inline-block;
 	float: right;
+	margin-top: 14px;
 }

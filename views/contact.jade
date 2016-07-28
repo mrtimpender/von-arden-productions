@@ -1,32 +1,49 @@
 extends layout
-block titles
-  h1= title
 block content
-  .contact-map
-    iframe(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
-  form(name='contact', method='post')
-    label(for='first-name')
-      div.input-field
-        input(type='text', name='first-name', placeholder='First Name')
-    label(for='last-name')
-      div.input-field
-        input(type='text', name='first-name', placeholder='Last Name')
-    label(for='phone')
-      div.input-field
-        input(type='text', name='phone', placeholder='Last Name')
-    label(for='event-date')
-      div.input-field
-        input(type='text', name='event-date', placeholder='Event Date')
-    label(for='event-location')
-      div.input-field
-        input(type='text', name='event-location', placeholder='Event Location')
-    label(for='find-out')
-      div.input-field
-        input(type='text', name='event-location', placeholder='How did you find out about us?')
-    label(for='event-details')
-      | Send us a message
-      div.input.event-details
-        textarea(type='text-box', name='event-details', cols'40', rows='6', placeholder='Additional details. Questions? Comments? Anything we should know?')
-    div.actions
-          input(type="submit", value="Submit")
+  .row
+    .form-div.col.s12.m5.l5
+      form(name='contact', method='post')
+        label(for='first-name')
+          div.input-field
+            input(type='text', name='first-name', placeholder='First Name')
+        label(for='last-name')
+          div.input-field
+            input(type='text', name='last-name', placeholder='Last Name')
+        label(for='phone')
+          div.input-field
+            input(type='text', name='phone', placeholder='Phone Number')
+        label(for='event-date')
+          div.input-field
+            input.datepicker(type='date', name='event-date', placeholder='Event Date')
+        label(for='event-location')
+          div.input-field
+            input(type='text', name='event-location', placeholder='Event Location')
+        label(for='find-out')
+          div.input-field
+            input(type='text', name='event-location', placeholder='How did you find out about us?')
+        label(for='event-details')
+          div.input.event-details
+            textarea.materialize-textarea(name='event-details', placeholder='Send us the details.')
+        div.submit-input
+          button.btn.waves-effect.waves-light.cyan(type="submit", value="Submit") Submit
+            i.material-icons.right send
+    .map.col.s12.m6.l6.offset-m1.offset-l1
+      .contact-info
+        h5 Contact Info
+        .divider
+        .contact-subinfo
+        p
+          i.material-icons.left.prefix account_circle 
+          | Eric Von Holtscneider
+        p
+          i.material-icons.left.prefix phone
+          | 410-867-5309
+        p
+          i.material-icons.left.prefix email
+          | VonArdenProductions@gmail.com
+      br
+      .divider
+      br
+      .video-container
+        iframe(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
 block footer
