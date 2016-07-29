@@ -2306,6 +2306,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  color: #26c6da;
 }
 
 /* Text-level semantics
@@ -2630,10 +2631,12 @@ ul li {
 }
 
 a {
-  color: #039be5;
+  color: #fff;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
+
+
 
 .valign-wrapper {
   display: -webkit-flex;

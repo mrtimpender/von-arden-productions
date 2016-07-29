@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* ABOUT GET */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About' });
+  res.render('about', { title: 'Eric Von Holtscneider' });
 });
 
 /* Contact GET */

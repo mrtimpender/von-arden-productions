@@ -17,6 +17,10 @@ body {
   height:100vh;
 }
 
+p {
+  margin-top: 0;
+}
+
 .subtitle {
   color: lightgreen;
 }
@@ -37,7 +41,9 @@ footer{
 footer h2{
   display: inline;
 }
-
+.fa {
+    margin-right: 15px;
+}
 
 /* NAVIGATION */
 .logo {
@@ -48,25 +54,9 @@ footer h2{
 	color: #26c6da;
 }
 
-/* ABOUT PAGE */
-.about-body-text {
-  float: right;
-  display: inline-block;
-  width: 40vw;
-  color: #26c6da;
-}
-
-.about-body-text p {
-  margin: 0 auto 2em 0;
-  font-size: 1.2em;
-}
-
-.about-pic {
-  display: inline-block;
-}
-
+/* About */
 .about-pic img {
-  width: 40vw;
+  max-width: 100%;
 }
 
 /* CONTACT PAGE */
