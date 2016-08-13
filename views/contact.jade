@@ -2,19 +2,19 @@ extends layout
 block content
   .row
     .form-div.col.s12.m5.l5
-      form(name='contact', method='post')
+      form(action='/contact', method='post')
         label(for='first-name')
           div.input-field
-            input(type='text', name='first-name', placeholder='First Name')
-        label(for='last-name')
+            input(type='text', name='name', placeholder='Name' required)
+        label(for='email')
           div.input-field
-            input(type='text', name='last-name', placeholder='Last Name')
+            input(type='text', name='email', placeholder='Email' required)
         label(for='phone')
           div.input-field
             input(type='text', name='phone', placeholder='Phone Number')
         label(for='event-date')
           div.input-field
-            input.datepicker(type='date', name='event-date', placeholder='Event Date')
+            input.datepicker(type='date', name='event-date', placeholder='Event Date' required)
         label(for='event-location')
           div.input-field
             input(type='text', name='event-location', placeholder='Event Location')
@@ -22,7 +22,7 @@ block content
           div.input-field
             input(type='text', name='event-location', placeholder='How did you find out about us?')
         label(for='event-details')
-          div.input.event-details
+          div.input-field
             textarea.materialize-textarea(name='event-details', placeholder='Send us the details.')
         div.submit-input
           button.btn.waves-effect.waves-light.cyan(type="submit", value="Submit") Submit
@@ -30,7 +30,7 @@ block content
     .map.col.s12.m6.l6.offset-m1.offset-l1
       .contact-info
         h5 Contact Info
-        .divider
+        br
         .contact-subinfo
         p
           i.material-icons.left.prefix account_circle 
@@ -41,7 +41,6 @@ block content
         p
           i.material-icons.left.prefix email
           | VonArdenProductions@gmail.com
-      br
       .divider
       br
       .video-container
