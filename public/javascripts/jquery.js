@@ -8,5 +8,4 @@ $(document).ready(function(){
 
   $('.carousel').carousel();
 
-  alert('jquery.js working')
 }) // JQuery Document.Ready Closure

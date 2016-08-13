@@ -8,5 +8,3 @@ function activeLink() {
 }
 
 document.onload = activeLink();
-
-alert('js/js-working');
