@@ -6859,8 +6859,9 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 0 32px;
 }
 
+
 .side-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 188, 212, 0.95);
 }
 
 .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
