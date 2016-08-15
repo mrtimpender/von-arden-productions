@@ -56,7 +56,7 @@ header {
   font-weight: 500;
   height: 90px;
   line-height: 90px;
-  padding: 0 32px;
+  padding: 5px 32px;
   margin: 0;
 }
 
@@ -66,12 +66,8 @@ header {
 
 .side-bar-logo {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding-top: 50px;
 }
-
-.brand-logo {
-  background: url('/images/bg-large.jpeg')
-}
-
 
 /* FOOTER */
 footer{
