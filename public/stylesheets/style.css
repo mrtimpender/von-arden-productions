@@ -2,6 +2,9 @@
 /* rgba(38, 198, 218, 1) */
 /* #26c6da */
 
+/* FONTS */
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
 /* LAYOUT & ALL PAGES */
 html {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/images/bg-large.jpeg') no-repeat center center fixed;
@@ -9,10 +12,11 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: sans-serif;
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Raleway', 'Roboto','Lucida Grande', Helvetica, Arial, sans-serif;
   color:white;
   height:100vh;
 }
@@ -58,6 +62,10 @@ header {
   line-height: 90px;
   padding: 5px 32px;
   margin: 0;
+}
+
+.side-nav a:hover {
+  color:#FFF;
 }
 
 .side-nav{
