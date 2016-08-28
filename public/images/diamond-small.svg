@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="40px" viewBox="0 0 22 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Diamond Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.3060833,5.67208037 C11.4124698,5.39089102 11.5824269,5.39009078 11.6887107,5.67848082 L16.9225064,19.8798423 C17.0274391,20.1645665 17.0260942,20.6207718 16.9167155,20.9060744 L11.8071521,34.2338226 C11.6990211,34.5158708 11.5186536,34.5202243 11.4012999,34.2363127 L5.91919279,20.9735491 C5.80317784,20.6928762 5.79546442,20.2371537 5.90175896,19.9562075 L11.3060833,5.67208037 L11.3060833,5.67208037 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="21.1731567" height="38.9856271">
+            <rect x="0.826843266" y="0.461683165" width="21.1731567" height="38.9856271" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Diamond-Copy">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use stroke="#26C6DA" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

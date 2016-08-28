@@ -4,7 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var mime = require('mime');
+var knex = require('knex')
 var routes = require('./routes/index');
 
 var app = express();
