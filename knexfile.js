@@ -4,7 +4,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/vonarden_development'
+    connection: process.env.DATABASE_URL || 'postgres://localhost/vonarden_development'
   },
 
   production: {
