@@ -2,7 +2,7 @@ extends layout
 block content
   .row
     .form-div.col.s12.m5.l5
-      form(id='contactForm' action='//formspree.io/mrtimpender@gmail.com' method='POST')
+      form(id='contactForm' action='#' method='POST')  
         label(for='first-name')
           div.input-field
             input(type='text', name='name', placeholder='Name' required)
@@ -12,21 +12,22 @@ block content
         label(for='phone')
           div.input-field
             input(type='text', name='phone', placeholder='Phone Number')
-        label(for='event-date')
+        label(for='eventDate')
           div.input-field
-            input.datepicker(type='date', name='event-date', placeholder='Event Date' required)
-        label(for='event-location')
+            input.datepicker(type='date', name='eventDate', placeholder='Event Date' required)
+        label(for='eventLocation')
           div.input-field
-            input(type='text', name='event-location', placeholder='Event Location')
-        label(for='find-out')
+            input(type='text', name='eventLocation', placeholder='Event Location')
+        label(for='findOut')
           div.input-field
-            input(type='text', name='event-location', placeholder='How did you find out about us?')
-        label(for='event-details')
+            input(type='text', name='findOut', placeholder='How did you find out about us?')
+        label(for='eventDetails')
           div.input-field
-            textarea.materialize-textarea(name='event-details', placeholder='Send us the details.')
+            textarea.materialize-textarea(name='eventDetails', placeholder='Send us the details.')
         //- input(type='hidden' name="_next" value='//mywebsite.com/thanks.html')
         input(type='hidden' name='_subject' value='Von Arden Contact')
         input(type="text" name="_gotcha" style="display:none")
+        //-  form(id='contactForm' action='//formspree.io/mrtimpender@gmail.com' method='POST')
         
         div.submit-input
           button.btn.waves-effect.waves-light.cyan(type="submit", value="Submit") Submit

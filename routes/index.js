@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var knex = require('../db/knex')
 
 /* HOME GET */
 router.get('/', function(req, res, next) {
@@ -41,7 +42,11 @@ router.get('/pricing', function(req, res, next){
 });
 /* CONTACT Post */
 router.post('/contact', function(req, res, next) {
-    res.send(req.body);
+    var date = new Date;
+    knex.raw(`INSERT INTO contact values(default, '${req.body.name}', '${req.body._replyto}', '${req.body.phone}', '${req.body.eventDate}', '${req.body.eventLocation}', '${req.body.findOut}', '${req.body.eventDetails}', '${date}' )`).then(function(){
+      res.redirect('/')
+    })
+    // res.send(req.body);
 });
 
 // Name
