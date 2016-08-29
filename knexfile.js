@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: 'postgres://localhost/vonarden_development'
-  }
+  },
 
   production: {
     client: 'pg',
