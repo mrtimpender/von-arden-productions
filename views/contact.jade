@@ -2,7 +2,7 @@ extends layout
 block content
   .row
     .form-div.col.s12.m5.l5
-      form(id='contactForm' action='//formspree.io/mrtimpender@gmail.com' method='POST')  
+      form(id='contactForm' method='POST')  
         label(for='first-name')
           div.input-field
             input(type='text', name='name', placeholder='Name' required)
@@ -27,6 +27,7 @@ block content
         //- input(type='hidden' name="_next" value='//mywebsite.com/thanks.html')
         input(type='hidden' name='_subject' value='Von Arden Contact')
         input(type="text" name="_gotcha" style="display:none")
+        input(type='hidden' name='_next' value='/thankyou')
         //-  form(id='contactForm' action='//formspree.io/mrtimpender@gmail.com' method='POST')
         
         div.submit-input
@@ -50,4 +51,8 @@ block content
       br
       .video-container
         iframe(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+      script.
+        var contactform =  document.getElementById('contactForm');
+        contactform.setAttribute('action', '//formspree.io/' + 'mrti' +'mpen' +'der' + '@' + 'gm'+'ail' + '.' + 'com');
+        
 block footer

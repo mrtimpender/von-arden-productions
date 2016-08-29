@@ -21,6 +21,12 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', {
     pageTitle: 'Von Arden Productions',
     title: 'Contact'});
+});
+/* Post Contact Submit Route */
+router.get('/thankyou', function(req, res, next) {
+  res.render('thankyou', {
+    pageTitle: 'Von Arden Productions',
+    title: 'Contact'});
 })
 /* Portfolio GET */
 router.get('/portfolio', function(req, res, next) {
