@@ -44,18 +44,12 @@ router.get('/pricing', function(req, res, next){
 router.post('/contact', function(req, res, next) {
     var date = new Date;
     knex.raw(`INSERT INTO contact values(default, '${req.body.name}', '${req.body._replyto}', '${req.body.phone}', '${req.body.eventDate}', '${req.body.eventLocation}', '${req.body.findOut}', '${req.body.eventDetails}', '${date}' )`).then(function(){
-      res.redirect('/')
+      res.render('thankyou', {
+        pageTitle: 'Von Arden Productions',
+        title: 'Contact'
+      })
     })
-    // res.send(req.body);
 });
-
-// Name
-// email
-// Phone Number
-// Event Date
-// Event Location
-// Discovery
-// Details
 
 
 
