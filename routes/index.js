@@ -41,9 +41,9 @@ router.get('/pricing', function(req, res, next){
     title: 'Pricing'})
 });
 /* CONTACT Post */
-router.post('/contact', function(req, res, next) {
+router.post('//formspree.io/mrtimpender@gmail.com', function(req, res, next) {
     var date = new Date;
-    knex.raw(`INSERT INTO contact values(default, '${req.body.name}', '${req.body._replyto}', '${req.body.phone}', '${req.body.eventDate}', '${req.body.eventLocation}', '${req.body.findOut}', '${req.body.eventDetails}', '${date}' )`).then(function(){
+    knex.raw(`INSERT INTO contact values(default, '${req.body.name}', '${req.body._replyto}', '${req.body.phone}', '${req.body.eventDate}', '${req.body.eventLocation}', '${req.body.findOut}', '${req.body.eventDetails}', '${date}')`).then(function(){
       res.render('thankyou', {
         pageTitle: 'Von Arden Productions',
         title: 'Contact'
