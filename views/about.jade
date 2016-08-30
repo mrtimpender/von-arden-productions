@@ -1,16 +1,22 @@
 extends layout
 
 block titles
-  h4= title
 block content
-  .row
-    .col.s12.m6.l6.about-pic
-      img(src='images/profile.jpg')
-    .col.sm12.m5.l5.offset-m1.offset-l1.about-body-text
-      p
-        | VonArdenProductions is a video and photography company primarily serving the Maryland, Virginia, Washington DC, West Virginia, Delaware, and Pennsylvania region. Though available for hire nationally and worldwide. We strive to give you a unique product, which will be carefully crafted to meet your needs. 
-      p
-        | We have an eclectic array of video and photography services. On the video side of the house we specialize in weddings, mitzvahs, events, virtual tours, corporate, interviews, testimonials, and aerial footage. While our photography staff focuses primarily on real estate, portrait, and product photography. 
-      p  
-        | VonArdenProductions is dedicated to providing each client with a high quality product, that will meet your expectations.
+  .animated.fadeIn
+    .row 
+      h3.center ABOUT
+      br
+      .splash-btn-container
+        a(href='/contact').btn.splash-btn Contact Us →
+      br
+    .row
+      .col.s12.m6.l6.about-pic
+        img(src='images/profile.jpg')
+      .col.sm12.m5.l5.offset-m1.offset-l1.about-body-text
+        p
+          | VonArdenProductions is a video and photography company primarily serving the Maryland, Virginia, Washington DC, West Virginia, Delaware, and Pennsylvania region. Though available for hire nationally and worldwide. We strive to give you a unique product, which will be carefully crafted to meet your needs. 
+        p
+          | We have an eclectic array of video and photography services. On the video side of the house we specialize in weddings, mitzvahs, events, virtual tours, corporate, interviews, testimonials, and aerial footage. While our photography staff focuses primarily on real estate, portrait, and product photography. 
+        p  
+          | VonArdenProductions is dedicated to providing each client with a high quality product, that will meet your expectations.
 block footer

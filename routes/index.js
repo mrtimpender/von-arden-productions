@@ -34,18 +34,6 @@ router.get('/portfolio', function(req, res, next) {
     pageTitle: 'Von Arden Productions',
     title: 'Portfolio'});
 });
-/* SERVICES GET */
-router.get('/services', function(req, res, next) {
-    res.render('services', {
-      pageTitle: 'Von Arden Productions',
-      title: 'Services'});
-  });
-/* Pricing Get */
-router.get('/pricing', function(req, res, next){
-  res.render('pricing', {
-    pageTitle: 'Von Arden Productions',
-    title: 'Pricing'})
-});
 /* CONTACT Post */
 router.post('//formspree.io/mrtimpender@gmail.com', function(req, res, next) {
     var date = new Date;

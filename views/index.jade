@@ -1,6 +1,10 @@
 extends layout
 
 block titles
-  h1= title
+  .animated.fadeIn
+    .splash-container
+      h1.splash-header= title
+    .splash-btn-container
+      a(href='/portfolio').btn.splash-btn View Past Projects →
 block content
 block footer
