@@ -2,7 +2,7 @@ extends layout
 block content
     
   .row
-    .form-div.col.s12.m5.l5.animated.fadeIn
+    .form-div.col.s12.m4.l5.animated.fadeIn
       form(id='contactForm' method='POST')  
         label(for='first-name')
           div.input-field
@@ -48,12 +48,12 @@ block content
         p
           i.material-icons.left.prefix email
           | VonArdenProductions@gmail.com
-      .divider
-      br
-      .video-container
-        iframe.animated.fadeIn(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
-      script.
-        var contactform =  document.getElementById('contactForm');
-        contactform.setAttribute('action', '//formspree.io/' + 'vo' +'nard' +'enprod' + 'uctions' + '@' + 'gm'+'ail' + '.' + 'com');
+        .divider
+        br
+        .video-container
+          iframe.animated.fadeIn(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+        script.
+          var contactform =  document.getElementById('contactForm');
+          contactform.setAttribute('action', '//formspree.io/' + 'vo' +'nard' +'enprod' + 'uctions' + '@' + 'gm'+'ail' + '.' + 'com');
         
 block footer
