@@ -55,6 +55,10 @@ header {
   right: 0;
 }
 
+.subheader{
+  margin: 0.75em auto 0.25em auto;
+}
+
 .brand-logo{
   max-width: 95%;
   max-height: 95%;
@@ -100,7 +104,8 @@ footer{
   margin:0;
   padding:0;
   bottom: 0;
-  /*position: fixed;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 footer h2{
   display: inline;
@@ -135,7 +140,7 @@ footer h2{
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 10vh;
+  margin-bottom: 0.75em;
 }
 
 @media only screen and (min-width: 601px) {
@@ -144,7 +149,7 @@ footer h2{
     height: 40vh;
   }
   .splash-btn-container {
-    height: 20vh;
+    height:8vh;
   }
 }
 
@@ -192,10 +197,6 @@ footer h2{
 	margin-top: 14px;
 }
 
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
 .send-to-back{
   z-index: 0;
   position: relative;
