@@ -33,11 +33,12 @@ html
   body
     block header
       include ../public/includes/header
-    .container  
-      block titles
-      block content
-      block footer
-      include ../public/includes/footer
-      script(type='text/javascript', src='/javascripts/materialize.js')
-      script(type='text/javascript', src='/javascripts/jquery.js')
-      script(type='text/javascript', src='/javascripts/javascript.js')
+    main
+      .container  
+        block titles
+        block content
+    block footer
+    include ../public/includes/footer
+    script(type='text/javascript', src='/javascripts/materialize.js')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/javascript.js')

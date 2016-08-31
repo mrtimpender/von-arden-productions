@@ -18,8 +18,13 @@ html {
 body {
   font: 14px 'Raleway', 'Roboto','Lucida Grande', Helvetica, Arial, sans-serif;
   color:white;
-  height:100vh;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+main {
+    flex: 1 0 auto;
+  }
 
 .container {
   margin-top: 1%;
@@ -95,7 +100,7 @@ footer{
   margin:0;
   padding:0;
   bottom: 0;
-  position: fixed;
+  /*position: fixed;*/
 }
 footer h2{
   display: inline;
