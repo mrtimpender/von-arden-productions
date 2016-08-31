@@ -78,6 +78,7 @@ header {
 
 .side-nav{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
 }
 
 .side-bar-logo-container {
@@ -162,6 +163,7 @@ footer h2{
 .splash-btn:hover{
   color: #ffffff;
   background-color: #26c6da;
+  border: 1px solid transparent;
 }
 
 .splash-btn a:hover{
@@ -188,4 +190,8 @@ footer h2{
 .center {
   margin: 0 auto;
   text-align: center;
+}
+.send-to-back{
+  z-index: 0;
+  position: relative;
 }

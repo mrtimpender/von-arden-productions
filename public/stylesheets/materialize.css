@@ -8215,7 +8215,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__weekday-display {
-  background-color: #1f897f;
+  background-color: #26c6da;
   padding: 10px;
   font-weight: 200;
   letter-spacing: .5;

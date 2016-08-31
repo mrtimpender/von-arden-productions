@@ -1,59 +1,63 @@
 extends layout
 block content
-    
+  .row 
+    h3.center CONTACT
+    br
+    div.submit-input.center.send-to-back
+      button.center.btn.waves-effect.waves-light.splash-btn.send-to-back(type="submit", value="Submit") Submit
+        i.material-icons.right send
   .row
-    .form-div.col.s12.m4.l5.animated.fadeIn
-      form(id='contactForm' method='POST')  
-        label(for='first-name')
-          div.input-field
-            input(type='text', name='name', placeholder='Name' required)
-        label(for='email')
-          div.input-field
-            input(type='text', name='_replyto', placeholder='Email' required)
-        label(for='phone')
-          div.input-field
-            input(type='text', name='phone', placeholder='Phone Number')
-        label(for='eventDate')
-          div.input-field
-            input.datepicker(type='date', name='eventDate', placeholder='Event Date' required)
-        label(for='eventLocation')
-          div.input-field
-            input(type='text', name='eventLocation', placeholder='Event Location')
-        label(for='findOut')
-          div.input-field
-            input(type='text', name='findOut', placeholder='How did you find out about us?')
-        label(for='eventDetails')
-          div.input-field
-            textarea.materialize-textarea(name='eventDetails', placeholder='Send us the details.')
-        //- input(type='hidden' name="_next" value='//mywebsite.com/thanks.html')
-        input(type='hidden' name='_subject' value='Von Arden Contact')
-        input(type="text" name="_gotcha" style="display:none")
-        input(type='hidden' name='_next' value='/thankyou')
+    .animated.fadeIn
+      .form-div.col.s12.m10.offset-m1.l5
+        form(id='contactForm' method='POST')  
+          label(for='first-name')
+            div.input-field
+              input(type='text', name='name', placeholder='Name' required)
+          label(for='email')
+            div.input-field
+              input(type='text', name='_replyto', placeholder='Email' required)
+          label(for='phone')
+            div.input-field
+              input(type='text', name='phone', placeholder='Phone Number')
+          label(for='eventDate')
+            div.input-field
+              input.datepicker(type='date', name='eventDate', placeholder='Event Date' required)
+          label(for='eventLocation')
+            div.input-field
+              input(type='text', name='eventLocation', placeholder='Event Location')
+          label(for='findOut')
+            div.input-field
+              input(type='text', name='findOut', placeholder='How did you find out about us?')
+          label(for='eventDetails')
+            div.input-field
+              textarea.materialize-textarea(name='eventDetails', placeholder='Send us the details.')
+          input(type='hidden' name='_subject' value='Von Arden Contact')
+          input(type="text" name="_gotcha" style="display:none")
+          input(type='hidden' name='_next' value='/thankyou')
         //-  form(id='contactForm' action='//formspree.io/mrtimpender@gmail.com' method='POST')
         
-        div.submit-input
-          button.btn.waves-effect.waves-light.cyan(type="submit", value="Submit") Submit
-            i.material-icons.right send
-    .map.col.s12.m6.l6.offset-m1.offset-l1
-      .contact-info
-        h5 Contact Info
-        br
-        .contact-subinfo
-        p
-          i.material-icons.left.prefix account_circle 
-          | Eric Von Holtscneider
-        p
-          i.material-icons.left.prefix phone
-          | 443-840-7868
-        p
-          i.material-icons.left.prefix email
-          | VonArdenProductions@gmail.com
+      .map.col.s12.m10.offset-m1.l6.offset-m1.right
+        .contact-info
+          h5 Direct Info
+          br
+          .contact-subinfo
+          p
+            i.material-icons.left.prefix account_circle 
+            | Eric Von Holtscneider
+          p
+            i.material-icons.left.prefix phone
+            | 443-840-7868
+          p
+            i.material-icons.left.prefix email
+            | VonArdenProductions@gmail.com
         .divider
         br
         .video-container
-          iframe.animated.fadeIn(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
-        script.
-          var contactform =  document.getElementById('contactForm');
-          contactform.setAttribute('action', '//formspree.io/' + 'vo' +'nard' +'enprod' + 'uctions' + '@' + 'gm'+'ail' + '.' + 'com');
+          iframe(src='https://goo.gl/5HEkC2', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
         
+  script.
+    var contactform =  document.getElementById('contactForm');
+    //- contactform.setAttribute('action', '//formspree.io/' + 'vo' +'nard' +'enprod' + 'uctions' + '@' + 'gm'+'ail' + '.' + 'com');
+    contactform.setAttribute('action', '//formspree.io/' + 'mrtimpender@gmail.com');
+
 block footer
