@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', {
     pageTitle: 'Von Arden Productions',
-    title: 'Eric Von Holtscneider' });
+    title: 'Eric Von Holtschneider' });
 });
 
 /* Contact GET */
