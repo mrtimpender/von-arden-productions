@@ -200,4 +200,9 @@ footer h2{
 .send-to-back{
   z-index: 0;
   position: relative;
+  margin: 0 auto;
+}
+
+.thanks-txt {
+  line-height: 1.75;
 }
